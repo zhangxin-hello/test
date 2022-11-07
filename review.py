@@ -4,6 +4,8 @@ def solution_array(array):
     n = len(array)
     #i表示对于每一列的操作：
     for i in range(0,n):
+        number = i 
+
         #找出对应那行元素[p,i]不是零的行p(注意：要从i开始):
         for p in range(i,n):
             if (abs(array[p,i])) > 1e-5:
